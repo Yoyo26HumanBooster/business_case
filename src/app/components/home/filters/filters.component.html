@@ -1,0 +1,149 @@
+<section class="container mt-5 mb-5 pt-4 pb-4 pl-4 pr-4" id="filter">
+    <h4 class="text-center mb-5" >Vous recherchez...</h4>
+    <div class="row justify-content-around">
+        <div class="col-4">
+            <select name="make" id="make" 
+                class="w-100 pt-2 pb-2 pl-4 pr-4">
+                <option value="">Marque</option>
+                <option value="">Toutes nos Marques</option>
+                <option value="alfa romeo">Alfa Romeo</option>
+                <option value="audi">Audi</option>
+                <option value="bmw">BMW</option>
+                <option value="chevrolet">Chevrolet</option>
+                <option value="citroën">Citroën</option>
+                <option value="dacia">Dacia</option>
+                <option value="ds">DS</option>
+                <option value="fiat">Fiat</option>
+            </select>
+        </div>
+        <div class="col-4">
+            <select name="model" id="model" class="w-100 pt-2 pb-2 pl-4 pr-4">
+            <option value="">Modèle</option>
+            <option value="">Tous nos modèles</option>
+            <option value="a1">A1</option>
+            <option value="a2">A2</option>
+            <option value="a3">A3</option>
+            <option value="a4">A4</option>
+            <option value="a5">A5</option>
+            <option value="dacia">A5</option>
+            <option value="ds">Giuletta</option>
+            <option value="fiat">Mito</option>
+            </select>
+        </div>
+        <div class="col-4">
+            <select name="fuel" id="fuel" class="w-100 pt-2 pb-2 pl-4 pr-4">
+            <option value="">Carburant</option>
+            <option value="essence">Essence</option>
+            <option value="diesel">Diesel</option>
+            <option value="electrique">Electrique</option>
+            <option value="hybride">Hybride</option>
+            <option value="gpl">GPL</option>
+            </select>
+        </div>
+    </div>
+            
+
+    <div class="row justify-content-around mt-5">
+        <div class="col-4">
+            <label name="release" id="release" for="release">Mise en circulation</label>
+            <br>
+            <app-filter-year></app-filter-year>
+            <!--2010<input
+            type="range"
+            name=""
+            id="budget"
+            min="2010"
+            max="2020"
+            step="1"
+            />2020
+            <datalist id="year">
+            <option value="2010" label="2010">
+            <option value="2011">
+            <option value="2012">
+            <option value="2013"> 
+            <option value="2014">
+            <option value="2015">
+            <option value="2016">
+            <option value="2017">
+            <option value="2018">
+            <option value="2019">
+            <option value="2020" label="2020">
+            </datalist>-->
+        </div>
+        <div class="col-4">
+            <label name="mileage" id="mileage" for="mileage">Kilométrage</label>
+            <br>
+            <app-filter-mileage></app-filter-mileage>
+            <!--0<input
+            type="range"
+            name=""
+            id="mileage"
+            min="0"
+            max="250000"
+            step="10000"
+            />250000+
+            <datalist id="kilometer">
+            <option value="0" label="0">
+            <option value="10000">
+            <option value="20000">
+            <option value="30000"> 
+            <option value="40000">
+            <option value="50000">
+            <option value="60000">
+            <option value="70000">
+            <option value="80000">
+            <option value="90000">
+            <option value="100000">
+            <option value="110000"> 
+            <option value="120000">
+            <option value="130000">
+            <option value="140000">
+            <option value="150000">
+            <option value="160000">
+            <option value="170000">
+            <option value="180000">
+            <option value="190000">
+            <option value="200000">
+            <option value="210000">
+            <option value="210000">
+            <option value="210000">
+            <option value="220000">
+            <option value="220000">
+            <option value="230000">
+            <option value="240000">             
+            <option value="250000" label="250000+">
+            </datalist>-->
+        </div>
+        <div class="col-4">
+            <label name="price" id="price" for="price">Prix(€)</label>
+            <br>
+            <app-filter-price></app-filter-price>
+            <!--
+            0<input
+            type="range"
+            name=""
+            id="price"
+            min="0"
+            max="50000"
+            step="5000"
+            />50000
+            <datalist id="price">
+            <option value="5000" label="5000">
+            <option value="10000">
+            <option value="15000">
+            <option value="20000"> 
+            <option value="25000">
+            <option value="30000">
+            <option value="35000">
+            <option value="40000">
+            <option value="45000">
+            <option value="50000" label="50000">
+            </datalist>
+            -->
+        </div>
+    </div>
+    <div class="text-center mt-3">
+        <button type="submit" class="btn btn-dark">
+        Rechercher</button>
+    </div>        
+</section>

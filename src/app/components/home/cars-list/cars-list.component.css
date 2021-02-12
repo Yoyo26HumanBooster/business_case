@@ -1,0 +1,23 @@
+h1 {
+    color : rgb(241, 16, 16);
+}
+
+h1::before {
+    content:'';
+    position: absolute;
+    width: 60rem;
+    height: .5rem;
+    background-color: rgb(241, 16, 16);
+    margin-top:1.2rem;
+    margin-left:-63rem;
+}
+
+h1::after {
+    content:'';
+    position: absolute;
+    width: 26.8rem;
+    height: .5rem;
+    background-color: rgb(241, 16, 16);;
+    margin-top:1.2rem;
+    margin-left:3rem;
+}

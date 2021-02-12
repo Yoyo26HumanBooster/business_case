@@ -1,0 +1,15 @@
+#carmodel {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#price {
+    font-weight: bold;
+    font-size: 20px;
+    color : rgb(22, 230, 22);
+}
+
+#ford {
+    width: 220px;
+    height: auto;
+}

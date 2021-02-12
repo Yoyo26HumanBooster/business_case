@@ -1,0 +1,19 @@
+#filter {
+    background-color: rgb(255, 193, 58);
+    border-radius: 30px;
+}
+
+#release {
+    font-weight: bold;
+    color: rgb(67, 160, 236);
+}
+
+#mileage {
+    font-weight: bold;
+    color: rgb(67, 160, 236);
+}
+
+#price {
+    font-weight: bold;
+    color: rgb(67, 160, 236);
+}
