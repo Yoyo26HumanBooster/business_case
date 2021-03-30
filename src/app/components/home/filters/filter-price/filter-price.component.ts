@@ -9,11 +9,11 @@ import { Options, LabelType } from '@angular-slider/ngx-slider';
 export class FilterPriceComponent implements OnInit {
 
   minValue: number = 0;
-  maxValue: number = 50000;
+  maxValue: number = 75000;
   options: Options = {
     floor: 0,
     step: 500,
-    ceil: 50000,
+    ceil: 75000,
     translate: (value: number, label: LabelType): string => {
       switch (label) {
         case LabelType.Low:

@@ -14,6 +14,7 @@ import { FilterYearComponent } from './components/home/filters/filter-year/filte
 import { FilterMileageComponent } from './components/home/filters/filter-mileage/filter-mileage.component';
 import { FilterPriceComponent } from './components/home/filters/filter-price/filter-price.component';
 import { FormsModule } from '@angular/forms';
+import { AuthViewComponent } from './views/auth-view/auth-view.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { FormsModule } from '@angular/forms';
     HomeViewComponent,
     FilterYearComponent,
     FilterMileageComponent,
-    FilterPriceComponent
+    FilterPriceComponent,
+    AuthViewComponent
   ],
   imports: [
     BrowserModule,
