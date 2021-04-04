@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -15,6 +14,8 @@ import { FilterMileageComponent } from './components/home/filters/filter-mileage
 import { FilterPriceComponent } from './components/home/filters/filter-price/filter-price.component';
 import { FormsModule } from '@angular/forms';
 import { AuthViewComponent } from './views/auth-view/auth-view.component';
+import { NewCarViewComponent } from './views/new-car-view/new-car-view.component';
+import { CarService } from './services/car/car.service';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { AuthViewComponent } from './views/auth-view/auth-view.component';
     FilterYearComponent,
     FilterMileageComponent,
     FilterPriceComponent,
-    AuthViewComponent
+    AuthViewComponent,
+    NewCarViewComponent
   ],
   imports: [
     BrowserModule,
@@ -36,7 +38,7 @@ import { AuthViewComponent } from './views/auth-view/auth-view.component';
     NgxSliderModule,
     FormsModule
   ],
-  providers: [],
+  providers: [CarService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,0 +1,103 @@
+<div id="title">
+    <h4>Veuillez renseigner le formulaire</h4>
+</div>
+
+<div class="container">    
+    <div class="row justify-content-center mt-5 mb-5" id="carNewForm">
+        <div class="col-9 text-center">
+        <form>
+            <!-- (ngSubmit)="onSubmitNewCar(newCar)"
+            #newCar="ngForm"> -->
+
+            <input
+                type="text"
+                class="form-control mt-4 mb-4"
+                name="reference"
+                placeholder="Référence"
+                ngModel>
+
+            <input
+                type="text"
+                class="form-control mb-4"
+                name="brand"
+                placeholder="Marque"
+                ngModel
+                required>
+            
+            <input
+                type="text"
+                class="form-control mb-4"
+                name="model"
+                placeholder="Modèle"
+                ngModel
+                required>
+            
+            <textarea
+                class="form-control mb-4"
+                name="description"
+                placeholder="Description"
+                ngModel
+                maxlength="258"
+                required>
+            </textarea>
+
+            <input
+                type="text"
+                class="form-control mb-4"
+                name="price"
+                placeholder="Prix"
+                ngModel
+                required>
+            
+            <input
+                type="number"
+                class="form-control mb-4"
+                name="registrationYear"
+                placeholder="Année de mise en circulation"
+                ngModel
+                required> 
+            
+            <input
+                type="number"
+                class="form-control mb-4"
+                name="mileage"
+                placeholder="Kilométrage"
+                ngModel
+                required>
+
+            <div class="form-group mb-4">
+                <select
+                class="form-control"
+                name="fuel"                    
+                ngModel
+                required>
+                    <option value selected="Carburant">Carburant</option>
+                        <option value="Essence">Essence</option>
+                        <option value="Diesel">Diesel</option>
+                        <option value="Electrique">Electrique</option>
+                        <option value="Hybride">Hybride</option>
+                        <option value="GPL">GPL</option>
+                </select>
+            </div>
+            
+
+            <label for="photo" class="mb-2">Choisir une(des) photo(s) :</label>
+            <br>
+            <input type="file"
+                class="mb-4"
+                id="photo" name="photo" multiple
+                accept="image/png, image/jpeg"
+                ngModel
+                required>
+            <br>       
+
+            <button            
+            type="submit"
+            class="btn btn-primary mb-4">
+            Ajouter
+            </button>
+            
+        </form>
+        </div>
+    </div>
+</div>
