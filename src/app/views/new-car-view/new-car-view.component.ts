@@ -11,16 +11,16 @@ import { Router } from '@angular/router';
 })
 export class NewCarViewComponent implements OnInit {
 
-  constructor() { }
+  constructor(private carService: CarService, private router: Router) { }
 
   ngOnInit(): void {
   }
     
   // onSubmitNewCar(form: NgForm): void {
 
-  //   const book = new Car(form.value.reference, form.value.brand, form.value.model, form.value.description, form.value.price, form.value.registrationYear, form.value.mileage, form.value.fuel, form.value.photo);
+  //   const car = new Car(form.value.reference, form.value.brand, form.value.model, form.value.description, form.value.price, form.value.registrationYear, form.value.mileage, form.value.fuel, form.value.garage, form.value.photo, form.value.publishedAt, form.value.updatedAt);
     
-  //   this.CarService.addBook(car).then(() => {
+  //   this.carService.addCar(car).then(() => {
   //   this.router.navigate(['cars']);
   //   });  
   // }

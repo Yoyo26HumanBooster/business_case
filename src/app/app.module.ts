@@ -16,6 +16,10 @@ import { FormsModule } from '@angular/forms';
 import { AuthViewComponent } from './views/auth-view/auth-view.component';
 import { NewCarViewComponent } from './views/new-car-view/new-car-view.component';
 import { CarService } from './services/car/car.service';
+import { SingleCarViewComponent } from './views/single-car-view/single-car-view.component';
+import { AuthService } from './services/auth/auth.service';
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -28,17 +32,16 @@ import { CarService } from './services/car/car.service';
     HomeViewComponent,
     FilterYearComponent,
     FilterMileageComponent,
-    FilterPriceComponent,
-    AuthViewComponent,
-    NewCarViewComponent
-  ],
+    FilterPriceComponent,       
+    ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgxSliderModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
-  providers: [CarService],
+  providers: [CarService, AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

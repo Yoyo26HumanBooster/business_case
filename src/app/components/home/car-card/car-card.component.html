@@ -1,7 +1,6 @@
 <div class="col shadow pt-4 pb-2 mb-4">
-    <img src="assets/img/Voiture_Ford_1.jpg" id="ford" alt="ford">
-    <p id="carmodel">Ford Kuga</p>
-    <p class="text-uppercase">2.0 tdc 115 ch fap titanium</p>
-    <p class="text-right" id="price">12490 €</p>
-    <p class="text-center"><a href="#" class="btn btn-info " role="button" title="Voir le détail">Voir le détail</a></p>
+    <img [src]="" alt="photo">
+    <p id="carBrandModel">{{car.brand}} {{car.model}}</p>
+    <p class="text-right" id="price">{{car.price}} €</p>
+    <p class="text-center"><a routerLink="car/:id'" class="btn btn-info" role="button" title="Voir le détail">Voir le détail</a></p>
 </div>

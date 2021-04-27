@@ -1,0 +1,15 @@
+#description h1 {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#description h3 {
+    text-transform: uppercase;
+}
+
+#caracteristics h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color : purple;
+}

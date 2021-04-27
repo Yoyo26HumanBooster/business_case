@@ -1,14 +1,9 @@
 <h1 class="text-center text-uppercase font-italic font-weight-bold mb-5">Nos coups de coeur du mois</h1>
 <div class="container">
     <div class="d-flex flex-wrap justify-content-around">
-        <app-car-card></app-car-card>
-        <app-car-card></app-car-card>
-        <app-car-card></app-car-card>
-        <app-car-card></app-car-card>
-        <app-car-card></app-car-card>
-        <app-car-card></app-car-card>
-        <app-car-card></app-car-card>
-        <app-car-card></app-car-card>       
+      <div *ngFor="let car of cars">
+        <app-car-card [car]="car"></app-car-card>
+      </div>                    
     </div>
 </div>
 <nav aria-label="Page navigation">

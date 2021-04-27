@@ -13,14 +13,14 @@ export class CarService {
   cars: BehaviorSubject<Array<Car>>;
 
   constructor(private httpClient: HttpClient) {
-    this.apiUrl = 'https://localhost.8000';
+    this.apiUrl = 'http://localhost:8000';
     this.cars = new BehaviorSubject<Array<Car>>(null);
   }
 
     getCars(): void {
 
       this.httpClient
-        .get(this.apiUrl + '/api/users?page=1')
+        .get(this.apiUrl + '/api/cars')
         .subscribe(
           (res: any) => {
 
